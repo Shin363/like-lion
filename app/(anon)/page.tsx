@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <main>
       {/* ---- greeting --------------------------------------------------- */}
@@ -92,4 +92,5 @@ export default function HomePage() {
       </section>
     </main>
   );
-}
+};
+export default HomePage;

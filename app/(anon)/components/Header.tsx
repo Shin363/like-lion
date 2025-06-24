@@ -1,17 +1,24 @@
 import React from "react";
+import styles from "./Header.module.css";
+
+const {
+  header,
+  ["top-mobile-menu"]: topMobileMenu,
+  ["top-menu"]: topMenu,
+} = styles;
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className={header}>
       <h1>
         <a href="/">Rland</a>
       </h1>
-      <div className="top-mobile-menu">
+      <div className={topMobileMenu}>
         <a className="n-icon n-icon:menu n-icon-color:base-1" href="top-menu=1">
           숨김버튼
         </a>
       </div>
-      <div className="top-menu">
+      <div className={topMenu}>
         <nav>
           <h1 className="d:none">상단메뉴</h1>
           <ul>
